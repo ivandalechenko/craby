@@ -1,0 +1,116 @@
+.HTB_decor {
+    width: 100% !important;
+    flex-wrap: wrap;
+
+    @media(max-width: 1000px) {
+        display: none;
+    }
+
+    &_cave {
+        max-width: 40vw;
+        height: 1500px;
+        object-fit: contain;
+    }
+
+    &_left,
+    &_right {
+        width: 100% !important;
+        align-items: start;
+    }
+
+    &_left {
+        justify-content: left;
+    }
+
+    &_right {
+        justify-content: right;
+
+        img {
+            transform: scaleX(-1);
+        }
+    }
+
+    &_hand {
+        width: 400px;
+
+        &_l1 {
+            width: 100% !important;
+            justify-content: left;
+            top: 400px;
+            left: -15px;
+            z-index: 2;
+        }
+
+        &_l2 {
+            width: 100% !important;
+            justify-content: left;
+            top: 680px;
+            z-index: 2;
+            left: 20px;
+        }
+
+        &_l3 {
+            width: 100% !important;
+            justify-content: left;
+            top: 970px;
+            z-index: 2;
+            left: 100px;
+        }
+
+        &_l4 {
+            width: 100% !important;
+            justify-content: left;
+            z-index: 2;
+            top: 1240px;
+            right: 50px;
+        }
+
+        &_r1 {
+            width: 100% !important;
+            justify-content: right;
+            top: 400px;
+            z-index: 2;
+            right: -15px;
+
+            img {
+                transform: scaleX(-1);
+            }
+        }
+
+        &_r2 {
+            width: 100% !important;
+            justify-content: right;
+            top: 680px;
+            right: 20px;
+            z-index: 2;
+
+            img {
+                transform: scaleX(-1);
+            }
+        }
+
+        &_r3 {
+            width: 100% !important;
+            justify-content: right;
+            top: 970px;
+            right: 100px;
+            z-index: 2;
+
+            img {
+                transform: scaleX(-1);
+            }
+        }
+
+        &_r4 {
+            width: 100% !important;
+            justify-content: right;
+            top: 1240px;
+            z-index: 2;
+            right: 50px;
+
+            img {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

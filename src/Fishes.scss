@@ -1,0 +1,126 @@
+.Fishes {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    pointer-events: none;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 300px;
+
+        @media(max-width: 500px) {
+            width: 150px;
+        }
+    }
+
+    &_tr {
+        animation: trAnim .5s infinite alternate ease-in-out;
+        transform: scaleX(-1);
+        transform-origin: center right;
+
+        &_wrapper {
+            top: 10vh;
+            animation: trAnimWrapper 12s infinite linear;
+        }
+    }
+
+    @keyframes trAnimWrapper {
+        0% {
+            transform: translateX(40vw);
+        }
+
+        100% {
+            transform: translateX(-120vw);
+        }
+    }
+
+    @keyframes trAnim {
+        0% {
+            rotate: -3deg;
+        }
+
+        100% {
+            rotate: 3deg;
+        }
+    }
+
+    &_hish {
+        animation: hishAnim .2s infinite alternate;
+
+        &_wrapper {
+            top: -30vh;
+            animation: hishAnimWrapper 12s infinite linear;
+        }
+    }
+
+    @keyframes hishAnimWrapper {
+
+        0% {
+            transform: translateX(-70vw);
+        }
+
+        100% {
+            transform: translateX(70vw);
+        }
+    }
+
+    @keyframes hishAnim {
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateY(20deg);
+        }
+    }
+
+
+
+
+    &_sq {
+        animation: sqAnim 2s infinite;
+
+        &_wrapper {
+            top: 40vh;
+            animation: sqAnimWrapper 30s infinite linear;
+        }
+    }
+
+    @keyframes sqAnimWrapper {
+        0% {
+            transform: translate(-70vw, 0px);
+        }
+
+        100% {
+            transform: translate(70vw, 0px);
+        }
+    }
+
+    @keyframes sqAnim {
+        0% {
+            transform: translateX(0);
+            /* Исходная позиция */
+        }
+
+        20% {
+            transform: translateX(-20px);
+            /* Движение чуть назад */
+        }
+
+        30% {
+            transform: translateX(50px);
+            /* Резкий рывок вперёд */
+        }
+
+        100% {
+            transform: translateX(0);
+            /* Возвращение на исходную */
+        }
+    }
+
+}

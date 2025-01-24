@@ -1,0 +1,209 @@
+.Tokenomics {
+    margin-top: 240px;
+    padding: 0px 12px;
+    position: relative;
+    z-index: 2;
+
+    @media(max-width: 1000px) {
+        margin-top: 60px;
+    }
+
+    &_media {
+        margin-top: 120px;
+    }
+
+    &_ca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 32px;
+        max-width: 100%;
+
+        @media(max-width: 1100px) {
+            flex-wrap: wrap;
+        }
+
+        &_header {
+            span {
+                color: #FFCA38;
+            }
+        }
+
+        &_content {
+            max-width: 100%;
+
+            &_text {
+                font-size: 40px;
+                font-family: "Modak";
+                line-height: 40px;
+
+                max-width: 100%;
+                word-wrap: break-word;
+                white-space: normal;
+
+                @media(max-width: 1100px) {
+                    text-align: center;
+                    padding: 0px 12px;
+                }
+            }
+
+            &_copy {
+                font-size: 40px;
+                line-height: 40px;
+                font-family: "Modak";
+                color: #38BDFF;
+                cursor: pointer;
+                transition: color 200ms;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                @media(max-width: 1100px) {
+                    text-align: center;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+
+    &_header {
+        text-align: center;
+        font-size: 100px;
+
+    }
+
+    &_advantages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 24px;
+    }
+
+    &_advantage {
+        font-size: 40px;
+        font-family: 'Modak';
+        padding: 20px;
+        border-radius: 32px;
+        border: 2px solid black;
+        box-shadow: 0px 8px 0px #000;
+        text-align: center;
+        background: linear-gradient(to bottom, #FFCA38, #FFBD0D);
+
+        @media(max-width: 700px) {
+            width: 100%;
+            line-height: 36px;
+            padding: 24px 20px;
+        }
+    }
+
+    span {
+        font-size: 100px;
+        font-family: "Modak";
+
+
+        letter-spacing: -10px;
+        text-shadow: 2.00px 0.00px #000000,
+            1.85px 0.77px #000000,
+            1.41px 1.41px #000000,
+            0.77px 1.85px #000000,
+            0.00px 2.00px #000000,
+            -0.77px 1.85px #000000,
+            -1.41px 1.41px #000000,
+            -1.85px 0.77px #000000,
+            -2.00px 0.00px #000000,
+            -1.85px -0.77px #000000,
+            -1.41px -1.41px #000000,
+            -0.77px -1.85px #000000,
+            -0.00px -2.00px #000000,
+            0.77px -1.85px #000000,
+            1.41px -1.41px #000000,
+            1.85px -0.77px #000000,
+            8.00px 6.00px #000000,
+            7.85px 6.77px #000000,
+            7.41px 7.41px #000000,
+            6.77px 7.85px #000000,
+            6.00px 8.00px #000000,
+            5.23px 7.85px #000000,
+            4.59px 7.41px #000000,
+            4.15px 6.77px #000000,
+            4.00px 6.00px #000000,
+            4.15px 5.23px #000000,
+            4.59px 4.59px #000000,
+            5.23px 4.15px #000000,
+            6.00px 4.00px #000000,
+            6.77px 4.15px #000000,
+            7.41px 4.59px #000000,
+            7.85px 5.23px #000000;
+
+        @media(max-width: 600px) {
+            font-size: 58px;
+            letter-spacing: -5px;
+        }
+    }
+}
+
+
+.MediaSmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    column-gap: 24px;
+
+    @media(max-width: 400px) {
+        column-gap: 16px;
+    }
+
+    &_el {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+        border: 2px solid black;
+        box-shadow: 0px 8px 0px black;
+
+        cursor: pointer;
+        transition: transform 200ms, box-shadow 200ms;
+
+        &:hover {
+            box-shadow: 0px 0px 0px #000;
+            transform: translate(0px, 8px) !important;
+        }
+
+        @media(max-width: 400px) {
+            width: 70px;
+            border-radius: 18px;
+            height: 70px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+
+            @media(max-width: 400px) {
+                width: 40px;
+                height: 40px;
+            }
+
+        }
+
+        &_1 {
+            background: #383946;
+        }
+
+        &_2 {
+            background: #3B9FF1;
+        }
+
+        &_3 {
+            background: #23242A;
+        }
+
+
+    }
+}

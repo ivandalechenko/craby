@@ -1,0 +1,35 @@
+.Paper {
+    background: linear-gradient(to bottom, #9FDBE9, #9FDBE900);
+    font-size: 12px;
+    padding-top: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @media(max-aspect-ratio: 1/1) {
+        padding-top: 50vw;
+    }
+
+    &_img {
+        // width: 100%;
+        // display: flex;
+        // justify-content: center;
+        height: 900px;
+        max-height: 150vw;
+
+        img {
+            // filter: brightness(0.5) blur(2px);
+            // opacity: .5;
+            width: 700px;
+            max-width: 100vw;
+            // max-width: 800px;
+        }
+
+        &_l {
+            position: relative;
+            left: 1px;
+        }
+    }
+}
