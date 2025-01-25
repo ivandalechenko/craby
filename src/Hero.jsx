@@ -41,7 +41,7 @@ export default ({ play, setplay }) => {
                 </div>
                 <div className='Hero_btn_wrapper Hero_btn_top free_img'>
                     <a href='https://raydium.io/swap/?inputMint=sol&outputMint=BQhiGezMhTtrwoDkdosWvkjGzL5SJ4D7gqb1fjmc673J' target='_blank' className='Hero_btn textShadowAndBorder'>
-                        BUY $CRUBY
+                        BUY $CRABY
                     </a>
                 </div>
             </div>
@@ -55,7 +55,7 @@ export default ({ play, setplay }) => {
                 {/* <audio src=""></audio> */}
                 <div className='Hero_btn_wrapper Hero_btn_bot free_img'>
                     <a href='https://raydium.io/swap/?inputMint=sol&outputMint=BQhiGezMhTtrwoDkdosWvkjGzL5SJ4D7gqb1fjmc673J' target='_blank' className='Hero_btn textShadowAndBorder'>
-                        BUY $CRUBY
+                        BUY $CRABY
                     </a>
                 </div>
             </div>
