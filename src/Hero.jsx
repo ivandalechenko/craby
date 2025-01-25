@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './scss/Hero.scss';
 import TextFromSpans from './TextFromSpans';
-export default () => {
+export default ({ play, setplay }) => {
     const [music, setmusic] = useState(false);
+    useEffect(() => {
+        setmusic(play)
+    }, [play])
 
+    useEffect(() => {
+        setplay(music)
+    }, [music])
     return (
         <div className='Hero'>
             <div className='Hero_top'>
